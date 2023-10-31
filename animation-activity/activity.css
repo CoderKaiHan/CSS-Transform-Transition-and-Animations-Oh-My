@@ -27,17 +27,30 @@ nav {
   opacity: 1;
 }
 
+#top:hover{
+  animation: top 1s forwards;
+}
+
 @keyframes top {
-  from {}
-  to {}
+  0% {transform: rotate(0turn);}
+  100% {transform:translate(0,33px) rotate(45deg); background-color: white;}
+}
+
+#middle:hover{
+  animation: middle 1s forwards;
 }
 
 @keyframes middle {
-  from {}
-  to {}
+  0%{opacity: 1;}
+  100%{opacity: 0;;}
+}
+
+
+#bottom:hover{
+  animation: bottom 1s forwards;
 }
 
 @keyframes bottom {
-  from {}
-  to {}
+  0%{transform:none;}
+  100% {transform:translate(0,-33px) rotate(-45deg); background-color: white;}
 }
